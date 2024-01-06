@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #welcome-container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #e0dd1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
+    }
+
+    p {
+      color: #e0dd1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0871fa;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #79acce;
+    }
+
+    </style>
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="./assets/images/Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="welcome-container">
+    
+    <h1><b>Welcome to My Personal Website</b></h1>
+    <p><b>Explore and discover about me</b></p>
+    <button onclick="redirectToDashboard()">Get Started</button>
+  </div>
+  
+  <script>
+    function redirectToDashboard() {
+      window.location.href = "main.html";
+    }
+  </script>
+
+</body>
+</html>
